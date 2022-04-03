@@ -19,9 +19,12 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 <html>
   <body>
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
     <script type="module">
       // your JavaScript here
+      const rootDiv = document.createElement('div');
+      rootDiv.id = "root";
+      document.body.append(rootDiv);
       const thisDiv = document.createElement('div');
       thisDiv.textContent = "Hello World";
       document.getElementById("root").append(thisDiv);
